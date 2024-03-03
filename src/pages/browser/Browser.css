@@ -1,0 +1,13 @@
+.container_url{
+    display: flex;
+    flex-direction: row;
+}
+.container_SM{
+    width: 30%;
+    min-width: 300px;
+}
+.container_bow{
+    width: 70%;
+    border: 1px dotted grey;
+    min-width: 650px;
+}
