@@ -32,9 +32,6 @@
   border-bottom: none;
 }
 .itemStyle {
-  border: 1px solid gray;
-  border-radius: 23px;
-  width: 23px;
   text-align: center;
   margin: auto;
   margin-top: 6px;
@@ -44,6 +41,7 @@
   line-height: 0px;
   font-size: 12px;
   padding-bottom: 5px;
+  margin: 5px;
 }
 .iconStyle {
   font-size: 20px !important;

@@ -1,7 +1,8 @@
-import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
-import GetAppOutlinedIcon from "@mui/icons-material/GetAppOutlined";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import Download from "../../assets/image/Telechargement.svg";
+import SiteMapImage from "../../assets/image/Site maps.svg";
+import Recherches from "../../assets/image/Recherche.svg";
 import "../layout.css";
+import GoogleIcon from "../../assets/image/google.png"
 // import { useNavigate } from "react-router-dom";
 
 const SecondBar = () => {
@@ -16,13 +17,21 @@ const SecondBar = () => {
           borderBottom: "1px solid gray",
         }}
       >
-        <div className="containerStyle" style={{ width: "29.5%",minWidth:"280px" }}>
+        <div
+          className="containerStyle"
+          style={{ width: "29.5%", minWidth: "280px" }}
+        >
           <button
             className="sectionStyle"
             // onClick={() => navigator("/sitemap")}
           >
             <div className="itemStyle">
-              <AccountTreeOutlinedIcon className="iconStyle" />
+              <img
+                src={SiteMapImage}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Site map</p>
           </button>
@@ -31,7 +40,12 @@ const SecondBar = () => {
             // onClick={() => navigator("/download")}
           >
             <div className="itemStyle">
-              <GetAppOutlinedIcon className="iconStyle" />
+              <img
+                src={Download}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Téléchargements</p>
           </button>
@@ -42,7 +56,7 @@ const SecondBar = () => {
             flexDirection: "row",
             width: "70%",
             justifyContent: "space-between",
-            alignItems: "flex-end"
+            alignItems: "flex-end",
           }}
         >
           <div className="tab_google">
@@ -58,14 +72,14 @@ const SecondBar = () => {
                 style={{
                   width: "15%",
                   textAlign: "center",
-                  paddingTop:"10px"
+                  paddingTop: "10px",
                 }}
               >
                 <img
                   alt="google_icon"
                   width="40%"
                   style={{ margin: "0px", minWidth: "30px" }}
-                  src="https://cdn.iconscout.com/icon/free/png-256/free-google-160-189824.png?f=webp&w=128"
+                  src={GoogleIcon}
                 />
               </div>
               <div
@@ -77,7 +91,10 @@ const SecondBar = () => {
                 }}
               >
                 <p style={{ fontSize: "15px", lineHeight: "0px" }}>
-                  <strong>Nom de domaine |</strong>  <span style={{fontSize:"14px",fontWeight:"500"}}>Titre de la page</span>
+                  <strong>Nom de domaine |</strong>{" "}
+                  <span style={{ fontSize: "14px", fontWeight: "500" }}>
+                    Titre de la page
+                  </span>
                 </p>
 
                 <p style={{ fontSize: "12px", lineHeight: "1.2" }}>
@@ -104,7 +121,12 @@ const SecondBar = () => {
               // onClick={() => navigator("/")}
             >
               <div className="itemStyle">
-                <SearchOutlinedIcon className="iconStyle" />
+                <img
+                  src={Recherches}
+                  alt="sitemap"
+                  width="70%"
+                  className="iconStyle"
+                />
               </div>
               <p className="titleStyle">Recherches</p>
             </button>

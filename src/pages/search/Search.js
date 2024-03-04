@@ -1,13 +1,15 @@
 import Partners from "../../components/partner/Partners";
 import "./search.css";
-import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
-import SubtitlesOutlinedIcon from "@mui/icons-material/SubtitlesOutlined";
-import CastOutlinedIcon from "@mui/icons-material/CastOutlined";
-import QueuePlayNextOutlinedIcon from "@mui/icons-material/QueuePlayNextOutlined";
-import ColorLensOutlinedIcon from "@mui/icons-material/ColorLensOutlined";
-import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutlined";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import partnerIcon from "../../assets/image/partners.png";
+import logoTitile from "../../assets/image/newspaper-folded.png";
+import faq from "../../assets/image/faq.png";
+import windowIcon from "../../assets/image/window.png";
+import paletteIcon from "../../assets/image/palette.png";
+import favoriteFolder from "../../assets/image/favorite-folder.png";
+import urlIoon from "../../assets/image/URL.svg";
+import webIcon from "../../assets/image/web.png";
 const Search = () => {
   const navigator = useNavigate();
   const [url, setUrl] = useState("");
@@ -78,10 +80,10 @@ const Search = () => {
               placeholder="Enter URL"
             />
             <button className="btn_w">
-              <p className="btn_p">WWW</p>
+              <img src={webIcon} width="30px" alt="webIcon" />
             </button>
             <button className="btn_do" onClick={handleNavigate}>
-              URL
+              <img src={urlIoon} width="30px" alt="urlIoon" />
             </button>
           </div>
           <div className="group_img">
@@ -106,31 +108,35 @@ const Search = () => {
           </div>
           <div className="footer">
             <div className="footer_set">
-              <HandshakeOutlinedIcon className="footer_ico" />
+              <img src={partnerIcon} className="footer_ico" alt="partnerIcon" />
               <p className="footer_p">Partenaire</p>
             </div>
             <div className="footer_set">
               <div className="footer_set">
-                <SubtitlesOutlinedIcon className="footer_ico" />
+                <img src={logoTitile} className="footer_ico" alt="logoTitile" />
                 <p className="footer_p">Titre du logo</p>
               </div>
               <div className="footer_set">
-                <CastOutlinedIcon className="footer_ico" />
+                <img src={faq} className="footer_ico" alt="faq" />
                 <p className="footer_p">Commentaire</p>
               </div>
               <div className="footer_set">
-                <SubtitlesOutlinedIcon className="footer_ico" />
-                <p className="footer_p">Commentaire</p>
+                <img src={faq} className="footer_ico" alt="faq" />
+                <p className="footer_p">Titre du logo</p>
               </div>
             </div>
             <div className="footer_set">
-              <SubtitlesOutlinedIcon className="footer_ico" />
-              <p className="footer_p">Commentaire</p>
+              <img src={faq} className="footer_ico" alt="faq" />
+              <p className="footer_p">Titre du logo</p>
             </div>
             <div className="footer_set">
-              <QueuePlayNextOutlinedIcon className="footer_ico" />
-              <ColorLensOutlinedIcon className="footer_ico" />
-              <CreateNewFolderOutlinedIcon className="footer_ico" />
+              <img src={windowIcon} className="footer_ico" alt="windowIcon" />
+              <img src={paletteIcon} className="footer_ico" alt="paletteIcon" />
+              <img
+                src={favoriteFolder}
+                className="footer_ico"
+                alt="favoriteFolder"
+              />
             </div>
           </div>
         </div>

@@ -1,12 +1,13 @@
-import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
-import GetAppOutlinedIcon from "@mui/icons-material/GetAppOutlined";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import RestorePageOutlinedIcon from "@mui/icons-material/RestorePageOutlined";
-import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
-import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import "../layout.css";
 import { useNavigate } from "react-router-dom";
+import SiteMapImage from "../../assets/image/Site maps.svg";
+import Download from "../../assets/image/Telechargement.svg";
+import Recherches from "../../assets/image/Recherche.svg";
+import History from "../../assets/image/Historique.svg";
+import Favoris from "../../assets/image/Favoris.svg";
+import Application from "../../assets/image/Aplication.svg";
+import parametrages from "../../assets/image/Parametrage.svg";
+
 const FirstBar = () => {
   const navigator = useNavigate();
   return (
@@ -26,7 +27,12 @@ const FirstBar = () => {
             onClick={() => navigator("/sitemap")}
           >
             <div className="itemStyle">
-              <AccountTreeOutlinedIcon className="iconStyle" />
+              <img
+                src={SiteMapImage}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Site map</p>
           </button>
@@ -35,7 +41,12 @@ const FirstBar = () => {
             onClick={() => navigator("/download")}
           >
             <div className="itemStyle">
-              <GetAppOutlinedIcon className="iconStyle" />
+              <img
+                src={Download}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Téléchargements</p>
           </button>
@@ -44,7 +55,12 @@ const FirstBar = () => {
         <div className="containerStyle">
           <button className="sectionStyle" onClick={() => navigator("/")}>
             <div className="itemStyle">
-              <SearchOutlinedIcon className="iconStyle" />
+              <img
+                src={Recherches}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Recherches</p>
           </button>
@@ -53,7 +69,12 @@ const FirstBar = () => {
             onClick={() => navigator("/history")}
           >
             <div className="itemStyle">
-              <RestorePageOutlinedIcon className="iconStyle" />
+              <img
+                src={History}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Historique</p>
           </button>
@@ -62,7 +83,12 @@ const FirstBar = () => {
             onClick={() => navigator("/favorites")}
           >
             <div className="itemStyle">
-              <StarBorderOutlinedIcon className="iconStyle" />
+              <img
+                src={Favoris}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">favoris</p>
           </button>
@@ -74,7 +100,12 @@ const FirstBar = () => {
             onClick={() => navigator("/applications")}
           >
             <div className="itemStyle">
-              <GridViewOutlinedIcon className="iconStyle" />
+              <img
+                src={Application}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Applications</p>
           </button>
@@ -86,7 +117,12 @@ const FirstBar = () => {
             onClick={() => navigator("/settings")}
           >
             <div className="itemStyle">
-              <SettingsOutlinedIcon className="iconStyle" />
+              <img
+                src={parametrages}
+                alt="sitemap"
+                width="70%"
+                className="iconStyle"
+              />
             </div>
             <p className="titleStyle">Paramétrages</p>
           </button>
